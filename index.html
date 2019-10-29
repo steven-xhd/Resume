@@ -4,10 +4,174 @@
 		<meta charset="utf-8" />
 		<title></title>
 	</head>
+	 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		#head{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 5px;
+		}
+		#first{
+			
+		}
+		#second{
+			
+		}
+	    #middle{ 
+	    	margin: 0 auto;
+	    }
+	    #middlefirst{
+	    	margin-bottom: 5px;
+	    }
+	    #middlesecond{
+	    	margin-bottom: 5px;
+	    }
+	    #box{
+	    	display: flex;
+	    	flex-direction: row;
+	    	justify-content: center;
+	    	align-content: flex-start;
+	    	flex-wrap: wrap;
+	    }
+	    #box > img{
+	    	margin: 20px;
+	    }
+	</style>
 	<body>
-		
+		<div id="head" class="fluid-container">
+  <div id="first" class="card">
+    <img class="card-img-top" src="images/xuhaoding.jpg" alt="Card image" style="width:100%">
+    <div class="card-body bg-dark">
+      <h4 class="card-title" style="color: white;">徐浩丁</h4>
+      <p class="card-text" style="color: white;">1998.06.12生于重庆市开州区中和镇，就读于重庆工程学院，预计2020年6月毕业，软件开发专业，擅长Java开发。</p>
+    </div>
+  </div>
+  <div id="second">
+  	<div class="fluid-container">          
+  <table class="table table-dark"> 
+      <tr>
+        <td>专业</td>
+        <td>软件工程</td>
+      </tr>
+      <tr>
+        <td>联系电话</td>
+        <td>15111951767</td>
+      </tr>
+      <tr>
+        <td>电子邮箱</td>
+        <td>740430162@qq.com</td>
+      </tr>
+       <tr>
+        <td>籍贯</td>
+        <td>重庆</td>
+      </tr>
+      <tr>
+        <td>政治面貌</td>
+        <td>共青团员</td>
+      </tr>
+      <tr>
+        <td>第一求职意向</td>
+        <td style="color: red;">Java后端开发工程师</td>
+      </tr>
+      <tr>
+        <td>第二求职意向</td>
+        <td style="color: orangered;">Java前端开发工程师</td>
+      </tr>
+  </table>
+</div>
+<div class="fluid-container" style="color: white;">
+  <div class="card bg-dark">
+    <div class="card-body">
+      <h4 class="card-title" >个人说明</h4>
+      <p class="card-text">具备良好的团队合作精神，扎实的基本功，优秀的沟通能力和自学能力。性格开朗，大方，工作认真负责。掌握基本的专业知识，并积极参与校外实习，做到自己全面发展。积极参加有助于加强专业技术发展的比赛，如程序设计大赛。在后端开发方面，拥有较强的逻辑思维能力，有较多的项目经验，能够高效的处理业务逻辑代码；对前端开发有相应的了解和知识储备。</p>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div id="middle" class="fluid-container">
+	<div id="middlefirst" class="fluid-container">
+  <div class="card bg-dark">
+    <div class="card-body">
+      <h4 class="card-title" style="color: white;">项目一</h4>
+<div class="fluid-container">          
+  <table class="table table-dark"> 
+      <tr>
+        <td>项目名称</td>
+        <td>在线评教系统</td>
+      </tr>
+      <tr>
+        <td>主要功能</td>
+        <td>学生对教师教学质量的反馈，学生可通过此系统对自己所选课程相对应的授课教师进行评教，院 校最终会通过综合评教结果，对教师进行考评</td>
+      </tr>
+      <tr>
+        <td>核心技术</td>
+        <td>项目采用SpringBoot后端开发框架，采用了Redis缓存技术，MD5加密算法，前端界面主要采Layui， BootStrap 框架，前端与后台的数据交互采用了 Ajax，采用 Mysql数据库存储数据。 </td>
+      </tr>
+       <tr>
+        <td>自身职责</td>
+        <td>各个表的CRUD，评教选项的封装，前端数据交互，数据库设计</td>
+      </tr>
+      <tr>
+        <td>Git链接</td>
+        <td><a href="https://github.com/steven-xhd/teaching-assessment-system">https://github.com/steven-xhd/teaching-assessment-system</a></td>
+      </tr>  
+  </table>
+</div>
+    </div>
+  </div>
+</div>
+<div id="middlesecond" class="fluid-container">
+  <div class="card bg-dark">
+    <div class="card-body">
+      <h4 class="card-title" style="color: white;">项目二</h4>
+<div class="fluid-container">          
+  <table class="table table-dark"> 
+       <tr>
+        <td>项目名称</td>
+        <td>在线学习系统</td>
+      </tr>
+      <tr>
+        <td>主要功能</td>
+        <td>通过此产品，学生可以在线选课，在线学习，课程评价，简化了传统的面对面授 课方式</td>
+      </tr>
+      <tr>
+        <td>核心技术</td>
+        <td>项目采用SpringBoot框架，对项目后端进行快速构建。采用 Mysql数据库，Mybatis 框架,同时使用 Mybatis 的自动化生成工具，通过连接数据库，编写配置文件，快速生成实体类，以及基本 Sql语句，和映射接口。上传的 课程视频资源以及图片资源，存放在独立构建的Apache静态资源文件服务器中。前端采用Layui框架实现用户界 面的交互</td>
+      </tr>
+       <tr>
+        <td>自身职责</td>
+        <td>，项目后端代码的编写，包括图片资源以及视频资源的上传存储，课程列表，角色列表以 及用户列表的CRUD，以及数据库设计</td>
+      </tr>
+      <tr>
+        <td>Git链接</td>
+        <td><a href=" https://github.com/steven-xhd/onlinestudysystem"> https://github.com/steven-xhd/onlinestudysystem</a></td>
+      </tr> 
+  </table>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div id="foot" class="fluid-container">
+  <div class="card" style="color: white;">
+    <div class="card-body bg-dark">
+      <h4 class="card-title">成绩&证书</h4>
+      <div id="box" class="cart-text">
+      	<img src="images/grade1.jpg" width="500px" height="350px"/>
+      	<img src="images/grade2.jpg" width="500px" height="350px"/>
+      	<img src="images/grade3.jpg" width="500px" height="350px"/>
+      	<img src="images/grade4.jpg" width="500px" height="350px"/>
+      	<img src="images/pic1.jpg" width="500px" height="350px"/>
+      	<img src="images/pic2.jpg" width="500px" height="350px"/>
+      </div>  
+    </div>
+</div>
+</div>
 	</body>
-	<script>
-		location.href = "./resume.pdf"
-	</script>
+	
 </html>
