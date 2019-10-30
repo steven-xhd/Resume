@@ -9,6 +9,11 @@
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<style>
+		body{
+			border: 10px solid rgb(52,58,64);
+			padding: 3px;
+			position: relative;
+		}
 		#head{
 			display: flex;
 			justify-content: center;
@@ -39,14 +44,50 @@
 	    #box > img{
 	    	margin: 20px;
 	    }
+	    .play>img{
+	    	position: fixed;
+	    	left: 20px;
+	    	top: 20px;
+	    	z-index: 9999;
+	    	height: 35px;
+	    	width: 35px;
+	    	background: blue;
+	    	opacity: 0.7;
+	    	border-radius: 30px;
+	    	padding-right: 2px;
+	    	animation: animat 10s infinite linear;
+	    }
+	    @keyframes animat{
+			100% {transform: rotate(360deg);}
+	    }
 	</style>
+	<script>
+		$(function(){
+		var $play = $('.play>img')
+		var audio = $('audio')[0]
+		$play.click(function(){
+			console.log(1111)
+			if(audio.paused){
+				audio.play()
+				$play.css("animation","animat 10s infinite linear")
+			}else{
+				audio.pause()
+				$play.css("animation","animats 10s infinite linear")
+			}
+		})
+		})
+	</script>
 	<body>
+		<div class="play">
+			<img src="images/icon.png" />
+		</div>
+		<audio id="myaudio" preload="auto" autoplay="autoplay" loop="loop" src="mp3/bgm.mp3"></audio>
 		<div id="head" class="fluid-container">
   <div id="first" class="card">
     <img class="card-img-top" src="images/xuhaoding.jpg" alt="Card image" style="width:100%">
     <div class="card-body bg-dark">
       <h4 class="card-title" style="color: white;">徐浩丁</h4>
-      <p class="card-text" style="color: white;">1998.06.12生于重庆市开州区中和镇，就读于重庆工程学院，预计2020年6月毕业，软件开发专业，擅长Java开发。</p>
+      <p class="card-text" style="color: white;">1998.06.12生于重庆市开州区中和镇，就读于重庆工程学院，预计2020年6月毕业，软件开发专业，精通Java开发，了解分布式系统。</p>
     </div>
   </div>
   <div id="second">
@@ -118,7 +159,7 @@
       </tr>
       <tr>
         <td>Git链接</td>
-        <td><a href="https://github.com/steven-xhd/teaching-assessment-system">https://github.com/steven-xhd/teaching-assessment-system</a></td>
+        <td><a href="https://github.com/steven-xhd/teaching-assessment-system">https://github.com/steven-xhd/teaching-assessment-system</a>(请在pc端打开链接)</td>
       </tr>  
   </table>
 </div>
@@ -145,11 +186,11 @@
       </tr>
        <tr>
         <td>自身职责</td>
-        <td>，项目后端代码的编写，包括图片资源以及视频资源的上传存储，课程列表，角色列表以 及用户列表的CRUD，以及数据库设计</td>
+        <td>项目后端代码的编写，包括图片资源以及视频资源的上传存储，课程列表，角色列表以 及用户列表的CRUD，以及数据库设计</td>
       </tr>
       <tr>
         <td>Git链接</td>
-        <td><a href=" https://github.com/steven-xhd/onlinestudysystem"> https://github.com/steven-xhd/onlinestudysystem</a></td>
+        <td><a href=" https://github.com/steven-xhd/onlinestudysystem"> https://github.com/steven-xhd/onlinestudysystem</a>(请在pc端打开链接)</td>
       </tr> 
   </table>
 </div>
